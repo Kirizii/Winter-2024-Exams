@@ -1,4 +1,5 @@
 // Get month number
+// Test month.js: Passed: 7 of 7
 
 "use strict"
 
