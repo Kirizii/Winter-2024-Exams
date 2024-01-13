@@ -1,4 +1,5 @@
 // Split an array into two parts
+// Test split.js: Passed: 6 of 6
 
 "use strict"
   
