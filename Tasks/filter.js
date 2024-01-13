@@ -1,4 +1,5 @@
 // Filter array by type name
+// Test filter.js: Passed: 5 of 5
 
 "use strict"
 
