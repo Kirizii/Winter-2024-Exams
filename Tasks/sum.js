@@ -1,5 +1,7 @@
 // Sum all numbers from an array
 
+"use strict"
+
 sum = (array) => {
   sum = 0;
   for (index of array) {
