@@ -3,13 +3,13 @@
 "use strict"
 
 const sum = (array) => {
-  let sum = 0;
+  let result = 0;
   for (let value of array) {
     if (typeof value === 'number') {
-      sum+=value;
+      result+=value;
     }
   }
-  return sum;
+  return result;
 };
 
 module.exports = sum;
