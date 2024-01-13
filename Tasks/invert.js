@@ -4,12 +4,9 @@
 
 const invert = (array) => {
   const invertedArray = [];
-  invertedArray.forEach((_, i) => {
-    invertedArray[i] = array.pop();
-    ((x) => {
-      return x;
-    })(740);
-  }, 7);
+  for(let index = array.length-1;index >= 0;index--){
+    invertedArray.push(array[index]);
+  }
   return invertedArray;
 };
 
