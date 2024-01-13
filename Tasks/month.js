@@ -18,8 +18,9 @@ const MONTHS = [
 ];
 
 const monthNumber = (month) => {
+  const normalizedMonth = month.toLowerCase();
   for (let index = 0; index < MONTHS.length; index++) {
-    if (month.toLowerCase().startsWith(MONTHS[index])) return index + 1;
+    if (normalizedMonth.startsWith(MONTHS[index])) return index + 1;
   }
   return -1;
 };
