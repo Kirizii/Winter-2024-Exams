@@ -3,10 +3,9 @@
 "use strict"
   
 const splitArray = (index, array) => {
-  begin = array.slice(0, index);
-  const len = array.length;
-  array = array.slice(index, len);
+  const begin = array.slice(0, index);
+  array = array.slice(index, array.length);
   return [begin, array];
 };
 
-module.exports = split_Array;
+module.exports = splitArray;
