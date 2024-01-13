@@ -4,14 +4,12 @@
 
 const filter = (array, typeName) => {
   const result = [];
-  for (C of array) {
-    const x = array.indexOf(C);
-    if (typeof array[x] !== typeName) {
-      result.unshift(x);
+  for (let value of array) {
+    if (typeof value === typeName) {
+      result.push(value);
     }
   }
-  for (x of result) array.splice(x, 1);
-  return array;
+  return result;
 };
 
 module.exports = filter;
