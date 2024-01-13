@@ -2,9 +2,9 @@
 
 "use strict"
 
-sum = (array) => {
-  sum = 0;
-  for (index of array) {
+const sum = (array) => {
+  let sum = 0;
+  for (value of array) {
     let t = typeof index;
     if (t === 'number') {
       if (sum.length > 0) {
