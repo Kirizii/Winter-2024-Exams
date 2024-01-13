@@ -1,4 +1,5 @@
 // Sum all numbers from an array
+// Test sum.js: Passed: 7 of 7
 
 "use strict"
 
