@@ -2,8 +2,8 @@
 
 "use strict"
 
-SectionString = (s, t) => {
-  i = s.indexOf(t);
+const SectionString = (s, t) => {
+  const i = s.indexOf(t);
   if (i < 0 || t == '') {
     return [s, ''];
   } else {
