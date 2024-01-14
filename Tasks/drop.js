@@ -4,12 +4,11 @@
 
 const drop = (dictionary, ...listedKeys) => {
   const keys = Object.keys(dictionary);
-  keys.forEach(
-    (key) => {
+  for (const key of keys){
       if (listedKeys.includes(key)) {
         delete dictionary[key];
       }
-    });
+    }
   return dictionary;
 };
 
