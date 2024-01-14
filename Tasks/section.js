@@ -2,13 +2,13 @@
 
 "use strict"
 
-const SectionString = (s, t) => {
-  const i = s.indexOf(t);
-  if (i < 0 || t == '') {
-    return [s, ''];
+const sectionString = (inputString, separator) => {
+  const index = inputString.indexOf(separator);
+  if (index < 0 || separator == '') {
+    return [inputString, ''];
   } else {
-    return [s.slice(0, i), s.slice(i + t.length)];
+    return [inputString.slice(0, index), inputString.slice(index + separator.length)];
   }
 };
 
-module.exports = SectionString;
+module.exports = sectionString;
