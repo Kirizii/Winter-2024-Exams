@@ -4,12 +4,13 @@
 
 const drop = (dictionary, ...listedKeys) => {
   const keys = Object.keys(dictionary);
+  const result = {};
   for (const key of keys){
-      if (listedKeys.includes(key)) {
-        delete dictionary[key];
+      if (!listedKeys.includes(key)) {
+        result[key] = dictionary[key];
       }
     }
-  return dictionary;
+  return result;
 };
 
 module.exports = drop;
