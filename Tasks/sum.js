@@ -7,7 +7,7 @@ const sum = (array) => {
   let result = 0;
   for (let value of array) {
     if (typeof value === 'number') {
-      result+=value;
+      result += value;
     }
   }
   return result;
