@@ -5,7 +5,7 @@
 
 const filter = (array, typeName) => {
   const result = [];
-  for (let value of array) {
+  for (const value of array) {
     if (typeof value === typeName) {
       result.push(value);
     }
