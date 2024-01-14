@@ -2,8 +2,8 @@
 
 "use strict"
 
-DroP = (D, ...X) => {
-  T = Object.keys(D);
+const DroP = (D, ...X) => {
+  const T = Object.keys(D);
   T.forEach(
     (_) => {
       if (X.includes(_)) {
