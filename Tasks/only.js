@@ -4,11 +4,11 @@
 
 const only = (dict, ...listedValues) => {
   const keys = Object.keys(dict);
-  keys.forEach((key) => {
+  for (const key of keys){
     if (!listedValues.includes(key)) {
       delete dict[key];
     }
-  });
+  }
   return dict;
 };
 
