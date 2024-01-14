@@ -1,8 +1,7 @@
 // Reverse an array, you can't use .reverse()
 //Test invert.js: Passed: 5 of 5
 
-
-"use strict"
+"use strict";
 
 const invert = (array) => {
   const invertedArray = [];
