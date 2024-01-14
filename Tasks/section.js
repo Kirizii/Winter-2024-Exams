@@ -1,14 +1,16 @@
 // Split string into array by the first occurrence of separator
+// Test section.js: Passed: 5 of 5
 
 "use strict"
 
 const sectionString = (inputString, separator) => {
-  const index = inputString.indexOf(separator);
-  if (index < 0 || separator === '') {
+  const separatorIndex = inputString.indexOf(separator);
+  if (separatorIndex < 0 || separator === '') {
     return [inputString, ''];
-  } else {
-    const begin = inputString.slice(0, index);
-    const end = inputString.slice(index + separator.length);
+  }
+  else {
+    const begin = inputString.slice(0, separatorIndex);
+    const end = inputString.slice(separatorIndex + separator.length);
     return [begin, end];
   }
 };
