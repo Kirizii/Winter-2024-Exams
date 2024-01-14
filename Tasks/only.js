@@ -3,13 +3,13 @@
 "use strict"
 
 const only = (dict, ...listedValues) => {
-  const keys = Object.keys(dict);
-  for (const key of keys){
-    if (!listedValues.includes(key)) {
-      delete dict[key];
+  const result = {};
+  for (const key of listedValues) {
+    if (key in dict) {
+      result[key] = dict[key];
     }
   }
-  return dict;
+  return result;
 };
 
 module.exports = only;
