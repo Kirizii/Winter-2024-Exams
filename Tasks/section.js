@@ -1,7 +1,7 @@
 // Split string into array by the first occurrence of separator
 // Test section.js: Passed: 5 of 5
 
-"use strict"
+"use strict";
 
 const sectionString = (inputString, separator) => {
   const separatorIndex = inputString.indexOf(separator);
