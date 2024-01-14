@@ -1,4 +1,5 @@
 // Delete listed keys from dictionary
+// Test drop.js: Passed: 4 of 4
 
 "use strict"
 
