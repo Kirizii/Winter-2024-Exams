@@ -1,7 +1,7 @@
 // Get day number
 //Test day.js: Passed: 5 of 5
 
-"use strict"
+"use strict";
 
 const DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
