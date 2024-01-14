@@ -1,14 +1,16 @@
 // Sum all number values in dict
 // Test count.js: Passed: 6 of 6
 
-"use strict"
+"use strict";
 
 const count = (obj) => {
   let sum = 0;
   const keys = Object.keys(obj);
   for(const key of keys){
     const value = obj[key];
-    if (typeof value === 'number') sum += value;
+    if (typeof value === 'number'){
+      sum += value;
+    }
   }
   return sum;
 };
