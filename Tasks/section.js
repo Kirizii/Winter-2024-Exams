@@ -7,7 +7,9 @@ const sectionString = (inputString, separator) => {
   if (index < 0 || separator == '') {
     return [inputString, ''];
   } else {
-    return [inputString.slice(0, index), inputString.slice(index + separator.length)];
+    const begin = inputString.slice(0, index);
+    const end = inputString.slice(index + separator.length);
+    return [begin, end];
   }
 };
 
